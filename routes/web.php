@@ -11,10 +11,8 @@
   |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+Route::get('/', 'DashboardController@index');
 Route::get('dashboard', 'DashboardController@index');
 Route::get('table', 'DashboardController@table');
 Route::get('form', 'DashboardController@form');
